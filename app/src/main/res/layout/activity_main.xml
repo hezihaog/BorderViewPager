@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_wt_choose_plate"
+    android:orientation="vertical"
+    tools:context="com.hzh.border.pager.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_wt_tip" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="42dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp" />
+
+    <LinearLayout
+        android:id="@+id/dotLayout"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="25dp"
+        android:background="#FFFFFF"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="14dp"
+        android:text="免费许愿牌3天体验，需要定期重新挂上许愿树哦，购买中级或高级许愿牌永久挂上许愿树，可以尽早实现愿望！"
+        android:textColor="#333333" />
+
+    <TextView
+        android:id="@+id/write_wish_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/bg_btn_write_wish_2"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="填写许愿牌"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
+</LinearLayout>
